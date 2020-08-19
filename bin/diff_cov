@@ -2,4 +2,7 @@
 
 require 'diff_cov'
 
-DiffCov::Coverage.covered?
+analyzer = DiffCov::Coverage_Analyzer.new(ARGV[0])
+git_controller = DiffCov::Git_Controller.new()
+
+analyzer.compare_diff(git_controller.diff)
