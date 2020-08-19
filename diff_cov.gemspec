@@ -7,5 +7,8 @@ Gem::Specification.new do |s|
   s.files = [
     "lib/"
   ]
-  s.require_paths = ["lib"]
+  s.require_paths = [
+    "lib"
+  ]
+  s.executables << 'diff_cov'
 end
